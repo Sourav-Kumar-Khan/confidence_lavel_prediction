@@ -5,7 +5,7 @@ mp_drawing_styles = mp.solutions.drawing_styles
 mp_holistic = mp.solutions.holistic
 
 
-cap = cv2.VideoCapture(r"E:\SproutsAI\image_sentiment_detection\emotion_detection\demo.mp4")
+cap = cv2.VideoCapture(0)
 with mp_holistic.Holistic(
     min_detection_confidence=0.5,
     min_tracking_confidence=0.5) as holistic:
